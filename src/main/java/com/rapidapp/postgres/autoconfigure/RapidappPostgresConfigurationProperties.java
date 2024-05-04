@@ -10,7 +10,8 @@ public class RapidappPostgresConfigurationProperties {
     private String apiKey;
     private String databaseId;
     private String databaseName;
-    private Boolean enabled;
+    private boolean enabled;
+    private boolean dropBeforeApplicationExit;
 
     public String getApiKey() {
         return apiKey;
@@ -20,11 +21,11 @@ public class RapidappPostgresConfigurationProperties {
         this.apiKey = apiKey;
     }
 
-    public Boolean getEnabled() {
+    public boolean getEnabled() {
         return enabled;
     }
 
-    public void setEnabled(Boolean enabled) {
+    public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
 
@@ -42,5 +43,13 @@ public class RapidappPostgresConfigurationProperties {
 
     public void setDatabaseName(String databaseName) {
         this.databaseName = databaseName;
+    }
+
+    public boolean getDropBeforeApplicationExit() {
+        return dropBeforeApplicationExit;
+    }
+
+    public void setDropBeforeApplicationExit(boolean dropBeforeApplicationExit) {
+        this.dropBeforeApplicationExit = dropBeforeApplicationExit;
     }
 }
